@@ -1,0 +1,35 @@
+
+<html>
+	<head>
+		<title>Strings的注册页面</title>
+	</head>
+	<body>
+		<center>
+		<h1>
+			欢迎来到Strings！
+		</h1> 
+		<form method="post"action="User.php">
+			<li>       
+			请输入注册名:<input id="username" type="text" class="_input" onblur="check_username()" />
+		</li>
+		<li>
+			请输入邮箱名<input id ="email" type="text" class="_input" onblur="check_email()"/>
+		</li>
+			<li>       
+				请输入密码:<input id="pass" type="password" class="_input" onblur="check_pass()" />
+			</li>     
+			<li> 
+				请再次确认密码:<input id="rpass" type="password" class="_input" onblur="check_rpass()" />
+			</li>
+		</form>
+			 <input type="submit" value =确认注册>
+			 <script type="text/javascript">
+			 var themassage=confirm("确认注册吗？");
+			 if (themassage==true)
+			 {window.open(<URL>,<Sring>,<..>);}
+			else
+			{<themassage>.close();}
+		</script>
+			</center>
+	</body>
+</html>
